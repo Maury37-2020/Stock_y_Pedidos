@@ -1,0 +1,201 @@
+@import url(../genericos.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    --varFuente1:arial;
+}
+
+#body-barra{
+    text-align: center;
+    font-family: var(--varFuente1);
+}
+
+header{
+    font-family: var(--varFuente1);
+}
+
+p{
+    text-align: left;
+    font-size: 12px;
+    color: var(--varRojo);
+    margin-top: 20px;
+}
+.contenedor{
+    margin-top: 50px;
+    width: 100%;
+    font-family: var(--varFuente1);
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.contiene-boton{
+    display: flex;
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.input{
+    display: block;
+    font-family: var(--varFuente1);
+    position: relative;
+    max-width: 90%;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.content_form{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 50%;
+}
+
+.campo-form{
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: white;
+    font-family: var(--varFuente1);
+    max-width:90% ;
+}
+
+.cod_p{
+    font-family: var(--fuente-1);
+    display: inline-block;
+    width: 40%;
+    font-size: 13px;
+    max-width: 250px;
+    margin-top: 100px;
+}
+
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+    }
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+/* input[type=number] { -moz-appearance:textfield; } */
+
+
+/* input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+} */
+/* input[type=date] { -moz-appearance:textfield; } */
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}

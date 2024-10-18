@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    --varFuente1:arial;
+}
+
+#body-barra{
+    padding-left: 100px;
+    text-align: center;
+    font-family: var(--varFuente1);
+}
+
+header{
+    font-family: var(--varFuente1);
+    padding-top: 20px;
+}
+.contenedor{
+    width: 100%;
+    font-family: var(--varFuente1);
+}
+
+.form{
+    position: relative;
+    align-items: center;
+}
+
+.contiene-boton{
+    display: flex;
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.input{
+    display: block;
+    font-family: var(--varFuente1);
+    position: relative;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.campo-form{
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: var(--varFuente1);
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+    }
+
+.btn{
+    background-color: #ccc;
+    color: rgb(26, 25, 25);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    border: 1px;
+    box-shadow: #888;
+}
+.btn:hover{
+    background-color: #b8b2b2;
+}
+
+.btn:active{
+    background-color: #888888;
+}

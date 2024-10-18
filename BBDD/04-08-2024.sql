@@ -1,0 +1,4 @@
+use compostela;
+
+-- SE AGREGA COLUMNA FECHA DE DESPACHO EN CABECERA DE PEDIDO
+ALTER TABLE pedidoscab ADD COLUMN fecha_despacho DATE;

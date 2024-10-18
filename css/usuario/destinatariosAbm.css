@@ -1,0 +1,197 @@
+@import url(../genericos.css);
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+:root{
+    --varFuente1:arial;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#body-barra{
+    text-align: center;
+    font-family: var(--varFuente1);
+}
+
+header{
+    font-family: var(--varFuente1);
+}
+
+p{
+    text-align: left;
+    font-size: 12px;
+    color: var(--varRojo);
+    margin-top: 20px;
+}
+.contenedor{
+    margin-top: 50px;
+    width: 100%;
+    font-family: var(--varFuente1);
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.contiene-boton{
+    display: flex;
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.input{
+    display: block;
+    font-family: var(--varFuente1);
+    position: relative;
+    max-width: 90%;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.content_form{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.campo-form{
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: white;
+    font-family: var(--varFuente1);
+    max-width:90% ;
+}
+
+.parte1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+
+.Cabecera, .Detalle{
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+}
+.renglon{
+    display: flex;
+    min-width: 90%;
+}
+
+.col4_t{
+    align-items: baseline;
+    height: 100%;
+}
+
+.col1_t, .col2_t, .col3_t{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.col3_t{
+    max-width: 35%;
+}
+
+.col4_t{
+    float: none;
+    margin-top: 27px;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field1{
+    background-color: var(--colorCeleste);
+}
+
+.field2{
+    display: flex;
+    justify-content: center;
+}
+
+legend{
+    padding-bottom: 11px;
+}
+
+table{
+    border-collapse: collapse ;
+    width: 95%;
+}
+
+th{
+    background-color: var(--colorCeleste);
+    border: 1px solid #ccc;
+}
+
+td{
+    padding: 5px 10px;
+}
+
+tr:hover{
+    background-color: var(--colorCelesteClaro);
+    transition-duration: 0.5s;
+}
+
+.col_t_1, .col_t_2, .col_t_3, .col_t_4{
+    max-width: 25%;
+    padding: 5px 10px;
+}
+
+.col4 {
+    text-align: right
+}
+
+.col {
+    max-width: 25%;
+}
+
+.modal-content{
+    max-width: 60%;
+}
+
+.modal-content p{
+    color: #474e5d;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#modalForm .container{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

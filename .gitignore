@@ -1,0 +1,8 @@
+# Ignorar la conexion
+modelo/conexion.php
+
+# Ignorar archivos de imagens
+imagenes/
+css/usuario/transportesABM.css
+interfaz/usuario/transportesAbm.php
+js/usuario/transportesABM.js

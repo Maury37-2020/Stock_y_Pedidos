@@ -1,0 +1,347 @@
+@import url(../genericos.css);
+
+.pie-de-pagina{
+  color: #000000;
+  background: linear-gradient(90deg, rgba(247,3,3,1) 0%, rgba(247,3,3,1)35%,  rgba(255,255,255,1) 50%);
+}
+
+* {
+    --varFuente1: 'Trebuchet MS';
+    box-sizing: border-box;
+    }
+
+body{
+    font: 16px Arial;
+    margin: 0 auto; 
+    padding-left: 80px;
+    }
+
+form{
+    min-width: 500px;
+}
+
+.container{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.contForm{
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Comienza el autocompletar
+the container must be positioned relative:*/
+.form{
+    position: relative;
+}
+
+.contiene-boton{
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+}
+
+input{
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.campo-form{
+  width: 98%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ /* Style the submit button */
+input[type=submit]{
+    width: 70%;
+    background-color: #b5daff;
+    color: rgb(26, 25, 25);
+    padding: 14px 20px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#hora_d{
+  max-width: 30%;
+}
+
+#hora_h{
+  max-width: 30%;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+  }
+
+.autocomplete-active span {
+  color:DodgerBlue;
+}
+
+.btn-enviar{
+  background-color: #ccc;
+  color: rgb(26, 25, 25);
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Trebuchet MS';
+  border: 1px;
+  box-shadow: #888;
+}
+
+.btn-enviar:hover{
+  background-color: #b8b2b2;
+}
+
+.btn-enviar:active{
+  background-color: #888888;
+}
+
+  /*Modal*/
+.modal {
+/*   visibility: hidden;
+  display: block; 
+  position: fixed;  */
+ /*  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;  */
+  /* overflow: auto; */
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+/*   padding-left: 80px; */
+
+  margin-left: 60px;
+  visibility: hidden;  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 15vh;
+}
+
+.titulo-Modal{
+  text-align: center;
+  font-family: 'Trebuchet MS';
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.titulo-Modal h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(26, 25, 25);
+}
+
+/* .Contenedor-form-modal{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 90%;
+  padding: 10px;
+} */ 
+
+
+.contiene-form{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.parte1{
+  width: 50%;
+  align-items: end;
+}
+
+.parte2{
+  width: 50%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.seccion{
+  width: 70%;
+  text-align: center;
+  font-family: var(--varFuente1);
+}
+
+.seccion span{
+  font-family: var(--varFuente1);
+  font-size: 20px;
+}
+
+.pie-de-pagina{
+/*   position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-right: 80px;
+  height: 15px;
+  border-top: 2px solid #8888;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+  font-family: var(--varFuente1); */
+  background: linear-gradient(90deg, rgba(247,3,3,1) 0%, rgba(247,3,3,1)30%,  rgba(255,255,255,1) 50%);
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: 0.3s; 
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cabeceracard {
+  border-bottom:1px solid; 
+  padding: 2px 0;
+  margin-bottom: 15px;
+}
+
+.botoncontinuar {
+  margin-top:20px;
+  text-align: center;
+}
+
+/* SNACKBAR */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #fc0202; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 100; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

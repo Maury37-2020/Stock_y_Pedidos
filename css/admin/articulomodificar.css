@@ -1,0 +1,107 @@
+h1{
+  text-align: center;
+}
+
+.container{    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+  .contForm{
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  input[type=text], input[type=file], input[type=number]{
+    width:99%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  
+  /* Fondo modal: negro con opacidad al 50% */
+  .modalActualizacion {
+      display: none; /* Por defecto, estará oculto */
+      position: fixed; /* Posición fija */
+      z-index: 1; /* Se situará por encima de otros elementos de la página*/
+      padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+      left: 0;
+      top: 0;
+      width: 100%; /* Ancho completo */
+      height: 100%; /* Algura completa */
+      overflow: auto; /* Se activará el scroll si es necesario */
+      background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+    }
+
+    .contenido-modal-actualizacion {
+      position: relative; /* Relativo con respecto al contenedor -modal- */
+      background-color: white;
+      margin: auto; /* Centrada */
+      padding: 20px;
+      width: 60%;
+      -webkit-animation-name: animarsuperior;
+      -webkit-animation-duration: 0.5s;
+      animation-name: animarsuperior;
+      animation-duration: 0.5s;
+    }
+
+    /*
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }*/
+    @keyframes animarsuperior {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+
+    span img {
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px;  /* Rounded border */
+      padding: 5px; /* Some padding */
+      width: 150px; /* Set a small width */
+      height: 150px; /* Set a small width */
+    }
+
+    span img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    input[type=submit] {
+      width: 50%;
+      background-color: #b5daff;
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+  }
+
+  input[type=submit]:hover{
+    background-color: #c2dcf1;
+}
+
+.modal{
+    display: none;
+}
+
+#modificar{
+  display: block;
+  margin: 10px auto;
+}
+
+.classLbl{
+  font-size: 20px;
+}

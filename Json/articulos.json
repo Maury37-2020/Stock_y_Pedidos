@@ -1,0 +1,9 @@
+{
+    "id":1,
+    "foto1":"celular1.jpg",
+    "foto2":"",
+    "descripcion":"Celular Samsung A14",
+    "stock":200,
+    "stock_minimo":10,
+    "fecha_alta": "19/04/2024"
+}

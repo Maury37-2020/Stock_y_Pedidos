@@ -1,0 +1,34 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url(./destinatariosAbm.css);
+
+.content_form{
+    max-width: 99%;
+}
+
+.time{
+    padding: 9px;
+}
+
+.parte1 .btn{
+    padding: 6px 14px;
+    font-size: 20px;
+}
+
+.col1_t{
+    max-width: 25%;
+}
+.col3_t, .col4_t{
+    max-width: 20%;
+    margin: 0;
+}
+
+.col2_t{
+    float: none;
+    margin-top: 30px;
+}
+
+.modal-content{
+    max-width: 50%;
+}
+
